@@ -1,0 +1,565 @@
+/* Global */
+@font-face{
+  font-family:'FontAwesome';
+  src:url('fonts/fontawesome-webfontba72.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding-bottom: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+}
+
+button {
+  outline: none;
+}
+
+#pricing_crm {
+  margin: 0px
+}
+
+#pricing_crm .container {
+  margin-top: 50px;
+}
+
+/* Global */
+
+/* Start Pricing Style */
+
+#pricing_crm .heading .description {
+  margin: 70px 0px 25px 0;
+}
+
+#pricing_crm .switch-plan {
+  margin-bottom: 80px;
+}
+
+#pricing_crm .switch-plan .inner-switcher {
+  position: relative;
+  width: 269px;
+  margin: 0 auto;
+  border-radius: 35px;
+  border: 2px solid #0099ff;
+  padding: 6px;
+}
+
+#pricing_crm .switch-plan .inner-switcher::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  transform: translateX(0px);
+  border-radius: 35px;
+  background-color: #0099ff;
+  width: 122px;
+  height: 39px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+#pricing_crm .switch-plan .inner-switcher button {
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-radius: 35px;
+  padding: 0;
+  font-size: 16px;
+  width: 122px;
+  height: 39px;
+  transition: all .3s ease-in-out;
+}
+
+#pricing_crm .switch-plan .inner-switcher button:first-child {
+  margin-right: 5px;
+  color: #fff;
+}
+
+#pricing_crm .switch-plan .inner-switcher.active button:first-child {
+  color: #485462;
+}
+
+#pricing_crm .switch-plan .inner-switcher.active button:last-child {
+  color: #fff;
+}
+
+#pricing_crm .switch-plan .inner-switcher.active::before {
+  transform: translateX(130px);
+}
+
+#pricing_crm .row-plan .plan-boxes {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#pricing_crm .row-plan .plan-boxes.sticky {
+  position: fixed;
+  top: 0;
+  max-width: 1141px;
+  width: 100%;
+}
+
+#pricing_crm .row-plan .plan-boxes > div {
+  position: relative;
+  flex: 0 0 18%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+#pricing_crm .row-plan .plan-boxes > div.popular {
+    border: 1px solid #0099ff;
+    border-bottom: none;
+}
+
+#pricing_crm .row-plan .plan-boxes > div:first-child {
+  border-top-left-radius: 5px;
+}
+
+#pricing_crm .row-plan .plan-boxes > div:last-child {
+  border-top-right-radius: 5px;
+}
+
+#pricing_crm .row-plan .plan-boxes.sticky > div {
+  box-shadow: 0 7px 11px -3px rgba(0,0,0,.16);
+}
+
+#pricing_crm .row-plan .plan-boxes.sticky > div:last-child {
+  flex: 0 0 18.09%;
+}
+
+#pricing_crm .row-plan .plan-boxes.sticky > div:nth-child(2) {
+  flex: 0 0 17.9%;
+}
+
+#pricing_crm .row-plan .plan-boxes > div:not(:last-child) {
+  border-right-color: transparent;
+}
+
+#pricing_crm .row-plan .plan-boxes > div.popular {
+    border-right-color: #0099ff;
+}
+
+#pricing_crm .row-plan .plan-boxes > div.popular + div {
+    border-left-color: transparent;
+}
+  
+
+#pricing_crm .row-plan .plan-boxes > div .title {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+#pricing_crm .row-plan .plan-boxes > div .price {
+  color: #333;
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+#pricing_crm .row-plan .plan-boxes > div .price .dolar {
+  font-size: 20px;
+  line-height: 15px;
+  margin-right: 6px;
+  font-weight: 700;
+}
+
+#pricing_crm .row-plan .plan-boxes > div .note {
+  color: #808080;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+#pricing_crm .row-plan .plan-boxes > div:first-child .note {
+  visibility: hidden;
+}
+
+#pricing_crm .row-plan .plan-boxes > div a {
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #0099ff;
+  border: 1px solid #0099ff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 25px;
+  min-height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#pricing_crm .row-plan .plan-boxes > div.popular a,
+#pricing_crm .row-plan .plan-boxes > div a:hover {
+  color: #fff;
+  background-color: #0099ff;
+}
+
+#pricing_crm .row-plan .plan-boxes > div .des {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+#pricing_crm .row-plan .plan-boxes > div.popular .popular-txt {
+  position: absolute;
+  top: -25px;
+  width: 101%;
+  left: -1.5px;
+  background-color: #0099ff;
+  color: #fff;
+  font-size: 13px;
+  padding: 3px;
+  font-weight: 500;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#pricing_crm .row-plan .plan-table {
+  overflow: hidden;
+}
+
+#pricing_crm .row-plan .row-title {
+  font-weight: 500;
+  color: #585858;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  padding: 8px 20px;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#pricing_crm .row-plan .row-title:hover {
+  background-color: #e8e8e8;
+}
+
+#pricing_crm .row-plan .view-btn-container,
+#pricing_crm .row-plan .plan-table .row-table {
+  display: flex;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  border-top: none;
+}
+
+#pricing_crm .row-plan .view-btn-container {
+  border-bottom: none;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#pricing_crm .row-plan .plan-table .row-table:not(:last-child) {
+  border-bottom: none;
+}
+
+#pricing_crm .row-plan .view-btn-container .empty-tab,
+#pricing_crm .row-plan .plan-table .row-table .tab-info {
+  flex: 0 0 28%;
+  padding: 15px 20px;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 99;
+}
+
+#pricing_crm .row-plan .plan-table .row-table .tab {
+  flex: 0 0 18%;
+  padding: 11px 20px;
+  color: #000;
+  text-align: center;
+  border-right: 1px solid #e6e6e6;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pricing_crm .row-plan .plan-table .row-table .tab {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#pricing_crm .row-plan .plan-table .row-table .tab:nth-child(3),
+#pricing_crm .row-plan .plan-table .row-table .tab:nth-child(4) {
+    border-right-color: #0099ff;
+}
+
+#pricing_crm .row-plan .plan-table .desktop-row-container:last-child .row-table:last-child .tab:nth-child(4) {
+    border-bottom-color: #0099ff;
+}
+
+#pricing_crm .row-plan .view-btn-container > div {
+  border-right: 1px solid #e6e6e6;
+  flex: 0 0 18%;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+#pricing_crm .row-plan .view-btn-container .empty-tab {
+  border-bottom: 1px solid #e6e6e6;
+  border-bottom-left-radius: 5px;
+}
+
+#pricing_crm .row-plan .view-btn-container > div:last-child,
+#pricing_crm .row-plan .plan-table .row-table > div:last-child {
+  border-right: none;
+}
+
+#pricing_crm .row-plan .view-btn-container > div:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+#pricing_crm .row-plan .view-btn-container .tab-btn {
+  box-shadow: 0 10px 16px -2px rgba(0,0,0,0.115);
+  border-bottom: 1px solid #eaeaea;
+}
+
+#pricing_crm .row-plan .view-btn-container > div button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #a6a6a6;
+}
+
+#pricing_crm .row-plan .tab-info .main-title {
+  display: flex;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#pricing_crm .row-plan .tab-info .main-title i {
+  font-size: 18px;
+  position: relative;
+  top: 8px;
+  left: 8px;
+  line-height: 0;
+  display: inline-table;
+  transition: all .3s ease-in-out;
+}
+
+#pricing_crm .row-plan .tab-info .main-title.active i {
+  transform: rotate(180deg);
+}
+
+#pricing_crm .row-plan .tab-details {
+  display: none;
+  color: #808080;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 0 5px 0px;
+}
+
+#pricing_crm .row-plan .plan-table > div:first-child {
+  border-top-left-radius: 5px;
+  border-top: 1px solid #e6e6e6;
+}
+
+#pricing_crm .row-plan .tab .icon {
+  font-size: 32px;
+}
+
+#pricing_crm .row-plan .tab .false-icon {
+  color: #dcdcdc;
+}
+
+#pricing_crm .row-plan .tab .true-icon {
+  color: #68da65;
+}
+
+#pricing_crm .row-plan .plan-table > div:not(:last-child) .row-table:last-child {
+  border-bottom: none;
+}
+
+#pricing_crm .row-plan .plan-boxes > div .price .currency-price {
+  font-size: 13px;
+  margin-left: 4px;
+  line-height: 11px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 700;
+}
+
+#pricing_crm .row-plan .plan-table .desktop-row-container {
+  display: none;
+}
+
+#pricing_crm .row-plan .row-title i {
+  display: inline-table;
+  margin-left: 6px;
+  transition: all .3s ease-in-out;
+  line-height: 0;
+  position: relative;
+  top: -3px;
+}
+#pricing_crm .row-plan .row-title.active i {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1199px) {
+  #pricing_crm .row-plan .plan-boxes.sticky {
+    max-width: 941px;
+  }
+  #pricing_crm .row-plan .plan-boxes > div {
+    padding: 10px;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.popular .popular-txt {
+    left: -0.5px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #pricing_crm .row-plan .plan-boxes.sticky {
+    max-width: 721px;
+  }
+  #pricing_crm .row-plan .plan-boxes.sticky > div:last-child {
+    flex: 0 0 18.2%;
+  }
+  #pricing_crm .row-plan .plan-boxes.sticky > div:nth-child(3) {
+    flex: 0 0 17.93%;
+  }
+  #pricing_crm .container {
+    width: 100%;
+  }
+  #pricing_crm {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #pricing_crm .row-plan .plan-table .row-table .tab-info {
+    flex: 0 0 25%;
+  }
+  #pricing_crm .row-plan .plan-boxes > div,
+  #pricing_crm .row-plan .plan-table .row-table .tab {
+    flex: 0 0 18.75%;
+  }
+  #pricing_crm .row-plan .plan-boxes > div .price {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #pricing_crm {
+    margin: 0;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan .mob-row-container,
+  #pricing_crm .row-plan .view-btn-container,
+  #pricing_crm .row-plan .plan-table {
+    display: none;
+  }
+  #pricing_crm .row-plan .row-title i {
+    top: 7px;
+  }
+  #pricing_crm .row-plan .plan-boxes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan {
+    flex: 0 0 92%;
+    max-width: 400px;
+    width: 92%;
+    padding: 15px 25px 25px 25px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 12px 1px rgba(0,0,0,.15);
+    border: none;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan.popular {
+    margin-top: 26px;
+    border: 1px solid #0099ff;
+  }
+  #pricing_crm .container .heading p {
+    font-size: 18px;
+  }
+  #pricing_crm .heading .description {
+    margin-top: 50px;
+  }
+  #pricing_crm .switch-plan {
+    margin-bottom: 60px;
+  }
+  #pricing_crm .row-plan .row-title {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: none;
+    min-height: 42px;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan .mob-table .mob-row {
+    display: flex;
+    padding: 0 10px;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    font-size: 15px;
+  }
+  #pricing_crm .row-plan .tab-info .main-title i {
+    font-size: 15px;
+    left: 8px;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan .mob-table .mob-row .tab-info {
+    flex: 0 0 70%;
+    width: 70%;
+    text-align: left;
+    padding: 10px 15px 10px 0px;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.popular .popular-txt {
+      left: 0;
+      width: 100%;
+      top: -24px;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan .mob-table .mob-row .tab {
+    flex: 0 0 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 5px;
+    border-left: 1px solid #e6e6e6;
+  }
+  #pricing_crm .row-plan .plan-boxes > div.box-plan .mob-table > div:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  #pricing_crm .row-plan .tab .icon {
+    font-size: 28px;
+  }
+  #pricing_crm .row-plan .mob-table > div:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+  #pricing_crm .row-plan .plan-boxes > div .price {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #pricing_crm .row-plan .plan-boxes > div.box-plan {
+    padding: 15px 15px 25px 15px;
+  }
+}
